@@ -1,0 +1,18 @@
+{
+  "request": {
+    "url": "/api/examples/create",
+    "method": "POST",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{\"employee_name\": \"raj\", \"employee_salary\": \"35278\", \"employee_age\": \"30\"}"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": "{\"status\": \"success\", \"id\": 1, \"employee_name\": \"raj\", \"employee_salary\": 35278, \"employee_age\": 30,\"message\": \"data created successfully\"}"
+  }
+}

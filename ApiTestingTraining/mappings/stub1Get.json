@@ -1,0 +1,13 @@
+{
+  "request": {
+    "url": "/api/examples",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": "{\"status\": \"success\", \"id\": 1, \"employee_name\": \"raj\", \"employee_salary\": 35278, \"employee_age\": 30,\"message\": \"get the data successfully\"}"
+  }
+}
