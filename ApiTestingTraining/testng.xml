@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite  name="Suite">
-  <test thread-count="3" parallel="tests" name="ParallelTesting">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
     <classes>
-      <class name="apiTestingPractice.ParallelTest"/>
+      <class name="api.com.WireMock.GetRequestWireMock"/>
+      <class name="api.com.WireMock.PostRequestWireMock"/>
     </classes>
-  </test> <!-- ParallelTesting -->
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
