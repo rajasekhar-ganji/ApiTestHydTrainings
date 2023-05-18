@@ -1,14 +1,19 @@
 {
 	"request": {
 	  "urlPattern": "/api/employees/\\d+",
-	  "method": "GET"
+	  "method": "GET",
+	  "headers": {
+		"Content-Type": {
+			"equalTo":"application/json"
+	  }
+		}
 	},
 	"response": {
 	  "status": 200,
 	  "headers": {
-		"Content-Type": "application/json"
+		"Content-Type":"application/json"
 	  },
-	  "body": "{\n  \"status\": \"success\",\n  \"data\": [\n    {\n      \"id\": 1,\n      \"employee_name\": \"Tiger Nixon\",\n      \"employee_salary\": 320800,\n      \"employee_age\": 61,\n      \"profile_image\": \"n\"\n    },\n    {\n      \"id\": 2,\n      \"employee_name\": \"Garrett Winters\",\n      \"employee_salary\": 170750,\n      \"employee_age\": 63,\n      \"profile_image\": \"n\"\n    },\n    {\n      \"id\": 3,\n      \"employee_name\": \"Ashton Cox\",\n      \"employee_salary\": 86000,\n      \"employee_age\": 66,\n      \"profile_image\": \"n\"\n    }\n  ],\n  \"message\": \"Successfully! All records have been fetched.\"\n}"
+	  "bodyFileName": "getdataById.json"
 
 	}
   }

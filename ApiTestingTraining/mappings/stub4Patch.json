@@ -1,18 +1,25 @@
 {
   "request": {
-    "url": "/api/examples/partialmodify",
+    "url": "/api/employees/partialmodify",
     "method": "PATCH",
-    "bodyPatterns": 
+    "bodyPatterns": [
       {
-        "equalToJson": "{\"employee_salary\": \"50000\"}"
+        "equalToJson": {
+          "employee_salary":50000
+        }
       }
-    
+    ],
+    "headers": {
+      "Content-Type": {
+        "equalTo":"application/json"
+      }
+  }
   },
   "response": {
     "status": 200,
     "headers": {
       "Content-Type": "application/json"
     },
-    "body": "{\"status\": \"success\", \"id\": 1, \"employee_name\": \"sekhar\", \"employee_salary\": 50000, \"employee_age\": 33,\"message\": \"partially modified successfully\"}"
+    "bodyFileName": "patchdata.json"
   }
 }
