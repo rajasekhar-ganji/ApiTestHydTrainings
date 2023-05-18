@@ -58,7 +58,7 @@ public class PatchRequestWireMock {
 	    @Test
 	    public void patch() {
 	  	    	Response response = RestAssured.given()
-	  	    	.baseUri(Constant.baseurl)
+	  	    	.baseUri(Constant.baseurl).auth().digest("rajasekhar123", "password123")
 	  	        .accept(ContentType.JSON)
 	  	        .body(passingdata.toString())
 	  	        .when()

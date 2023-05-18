@@ -1,23 +1,24 @@
 package api.com.WireMock;
 
-import java.net.URISyntaxException;
-
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.net.URISyntaxException;
 import com.github.tomakehurst.wiremock.WireMockServer;
 import com.github.tomakehurst.wiremock.client.ResponseDefinitionBuilder;
 import com.github.tomakehurst.wiremock.client.WireMock;
 
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
 
-public class DeleteRequestWireMock {
 
+
+public class ApikeyGetRequestWireMock{
+		
 	    private static final int PORT = Constant.portnumber;
 	    private static final String HOST = Constant.hostname;
 	    private static WireMockServer server = new WireMockServer(PORT);
@@ -27,13 +28,12 @@ public class DeleteRequestWireMock {
 	        ResponseDefinitionBuilder mockResponse = new ResponseDefinitionBuilder();
 	        mockResponse.withStatus(Constant.statuscode).withHeader(Constant.content,Constant.contenttype );
 	        WireMock.configureFor(HOST, PORT); // http://localhost:8080
-	        WireMock.stubFor(WireMock.delete(Constant.delete).willReturn(mockResponse));
+	        WireMock.stubFor(WireMock.get(Constant.get).willReturn(mockResponse));
 	    }
 	    @Test
-	    public void delete() throws URISyntaxException {
-	   Response response= RestAssured.given().baseUri(Constant.baseurl).accept(ContentType.JSON).when().delete(Constant.delete).then()
-	                .assertThat().statusCode(Constant.statuscode).log().all().extract().response();
-	        System.out.println(response.getBody().asString());
+	    public void get() throws URISyntaxException {
+	   Response response= RestAssured.given().baseUri(Constant.baseurl).header(Constant.authorization,Constant.apikey + Constant.apiKeyAccessToken).accept(ContentType.JSON).when().get(Constant.get).then()
+	                .assertThat().statusCode(Constant.statuscode).and().log().all().extract().response();
 	        System.out.println(response.statusCode());
 	        String actualstatusline = response.getStatusLine();
 			String expectedstatusline = Constant.statusline;
@@ -46,6 +46,4 @@ public class DeleteRequestWireMock {
 	            server.stop();
 	        }
 	    }
-	
-  }
-
+	}

@@ -1,10 +1,11 @@
 package api.com.WireMock;
 
-import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.hamcrest.Matchers;
 import org.json.simple.JSONObject;
@@ -13,28 +14,29 @@ import org.json.simple.parser.ParseException;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import com.github.tomakehurst.wiremock.WireMockServer;
 import com.github.tomakehurst.wiremock.client.ResponseDefinitionBuilder;
 import com.github.tomakehurst.wiremock.client.WireMock;
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-public class PutRequestWireMock {
-	
+
+public class Oauth1PostRequestWireMock {
 	  private static JSONObject passingdata;
 	    private static final int PORT = Constant.portnumber;
-	    private static final String HOST = "localhost";
+	    private static final String HOST = Constant.hostname;
 	    private static WireMockServer server = new WireMockServer(PORT);
 
 	    @BeforeTest
 	    public static void GetDataFromJSONFile() {
-	        JSONParser json = new JSONParser();
+	     JSONParser json = new JSONParser();
 	        FileReader file = null;
 	        try {
-	            file = new FileReader(Constant.jsonfile_pathforput);
+	            file = new FileReader(Constant.jsonfile_pathforpost);
 	        } catch (FileNotFoundException e) {
 	            e.printStackTrace();
 	        }
@@ -54,22 +56,28 @@ public class PutRequestWireMock {
 	        ResponseDefinitionBuilder mockResponse = new ResponseDefinitionBuilder();
 	        mockResponse.withStatus(Constant.statuscode).withHeader(Constant.content, Constant.contenttype);
 	        WireMock.configureFor(HOST, PORT);
-	        WireMock.stubFor(WireMock.post(Constant.put).willReturn(mockResponse));
+	        WireMock.stubFor(WireMock.post(Constant.post).willReturn(mockResponse));
 	    }
-	
-  @Test
-  public void put() {
+
+	    @Test
+	    public void post() throws URISyntaxException {
+		       Map<String, String> header=new HashMap<String, String>();
+		       String[]headers= {Constant.SignatureMethod,Constant.ConsumerKey,Constant.ConsumerSecret,Constant.AccessToken,Constant.TokenSecret};
+		       for(String headerValue: headers)
+	        	{
+	        header.put(Constant.authorization, headerValue);
+	        	}	
 	    	Response response = RestAssured.given()
-	    	.baseUri(Constant.baseurl).auth().oauth2(Constant.oauth2accesstoken)
+	    	.baseUri(Constant.baseurl).headers(header)
 	        .accept(ContentType.JSON)
-	        .body(passingdata.toJSONString())
+	        .body(passingdata.toString())
 	        .when()
-	        .put(Constant.put)
+	        .post(Constant.post)
 	        .then()
 	        .assertThat()
 	        .statusCode(200)
 	        .and()
-	        .body(Constant.matchValue, Matchers.equalTo(Constant.putvalidatename))
+	        .body(Constant.matchValue, Matchers.equalTo(Constant.name))
 	       .log().all().extract().response();
 	        System.out.println(response.getBody().asString());
 	        System.out.println(response.statusCode());
@@ -85,4 +93,4 @@ public class PutRequestWireMock {
 	            server.stop();
 	        }
 	    }
-}
+	}

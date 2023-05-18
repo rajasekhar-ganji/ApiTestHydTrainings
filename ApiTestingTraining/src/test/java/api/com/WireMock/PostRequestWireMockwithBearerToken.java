@@ -21,18 +21,18 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class PostRequestWireMock {
+public class PostRequestWireMockwithBearerToken {
     private static JSONObject passingdata;
     private static final int PORT = Constant.portnumber;
-    private static final String HOST = "localhost";
+    private static final String HOST = Constant.hostname;
     private static WireMockServer server = new WireMockServer(PORT);
 
     @BeforeTest
     public static void GetDataFromJSONFile() {
-        JSONParser json = new JSONParser();
+     JSONParser json = new JSONParser();
         FileReader file = null;
         try {
-            file = new FileReader(Constant.jsonfile_path);
+            file = new FileReader(Constant.jsonfile_pathforpost);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -50,18 +50,18 @@ public class PostRequestWireMock {
     public static void setup() {
         server.start();
         ResponseDefinitionBuilder mockResponse = new ResponseDefinitionBuilder();
-        mockResponse.withStatus(Constant.statuscode).withBody(Constant.requestBody)
-             .withHeader(Constant.content, Constant.contenttype);
+        mockResponse.withStatus(Constant.statuscode).withHeader(Constant.content, Constant.contenttype);
         WireMock.configureFor(HOST, PORT);
         WireMock.stubFor(WireMock.post(Constant.post).willReturn(mockResponse));
     }
 
     @Test
     public void post() throws URISyntaxException {
+    	
     	Response response = RestAssured.given()
-    	.baseUri(Constant.baseurl)
+    	.baseUri(Constant.baseurl).header(Constant.authorization,Constant.bearer + Constant.BearerToken)
         .accept(ContentType.JSON)
-        .body(passingdata.toJSONString())
+        .body(passingdata.toString())
         .when()
         .post(Constant.post)
         .then()
