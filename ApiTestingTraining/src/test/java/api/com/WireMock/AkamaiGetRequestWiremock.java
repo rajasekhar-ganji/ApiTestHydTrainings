@@ -29,14 +29,12 @@ public class AkamaiGetRequestWiremock {
 
 	    @Test
 	    public void getWithAkamai() {
-	    	 String AccessToken="akamai_myaccesstoken";
-	 		String ClientToken="akamai_myclienttoken";
-	 		String ClientSecret="akamai_myclientsecret";
-	       Map<String, String> header=new HashMap();
-	       String[]headers= {AccessToken,ClientToken,ClientSecret};
+	    	 
+	       Map<String, String> header=new HashMap<String, String>();
+	       String[]headers= {Constant.akamaiAccessToken,Constant.ClientToken,Constant.ClientSecret};
 	       for(String headerValue: headers)
        	{
-       header.put("Authorization", headerValue);
+       header.put(Constant.authorization, headerValue);
        	
        	}
 	        Response response = RestAssured.given()
