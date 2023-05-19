@@ -18,8 +18,9 @@ import com.github.tomakehurst.wiremock.client.WireMock;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import utils.Constant;
 
-public class PatchRequestWireMock {
+public class PatchRequestWireMockwithDigestauth {
 	  	
 	  	  private static JSONObject passingdata;
 	  	    private static final int PORT = Constant.portnumber;
@@ -58,14 +59,14 @@ public class PatchRequestWireMock {
 	    @Test
 	    public void patch() {
 	  	    	Response response = RestAssured.given()
-	  	    	.baseUri(Constant.baseurl).auth().digest("rajasekhar123", "password123")
+	  	    	.baseUri(Constant.baseurl).header(Constant.content,Constant.contenttype).auth().digest(Constant.digestUsername,Constant.digestPassword)
 	  	        .accept(ContentType.JSON)
 	  	        .body(passingdata.toString())
 	  	        .when()
 	  	        .patch(Constant.patch)
 	  	        .then()
 	  	        .assertThat()
-	  	        .statusCode(200)
+	  	        .statusCode(Constant.statuscode)
 	  	        .and()
 	  	        .body(Constant.matchsalaryValue, Matchers.equalTo(Constant.salary))
 	  	       .log().all().extract().response();

@@ -22,11 +22,12 @@ import com.github.tomakehurst.wiremock.client.WireMock;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-public class PutRequestWireMock {
+import utils.Constant;
+public class PutRequestWireMockwithOauth2 {
 	
 	  private static JSONObject passingdata;
 	    private static final int PORT = Constant.portnumber;
-	    private static final String HOST = "localhost";
+	    private static final String HOST = Constant.hostname;
 	    private static WireMockServer server = new WireMockServer(PORT);
 
 	    @BeforeTest
@@ -60,7 +61,7 @@ public class PutRequestWireMock {
   @Test
   public void put() {
 	    	Response response = RestAssured.given()
-	    	.baseUri(Constant.baseurl).auth().oauth2(Constant.oauth2accesstoken)
+	    	.baseUri(Constant.baseurl).header(Constant.content,Constant.contenttype).auth().oauth2(Constant.oauth2accesstoken)
 	        .accept(ContentType.JSON)
 	        .body(passingdata.toJSONString())
 	        .when()
