@@ -59,7 +59,11 @@ public class PatchRequestWireMockwithDigestauth {
 	    @Test
 	    public void patch() {
 	  	    	Response response = RestAssured.given()
+<<<<<<< HEAD:ApiTestingTraining/src/test/java/api/com/WireMock/PatchRequestWireMockwithDigestauth.java
 	  	    	.baseUri(Constant.baseurl).header(Constant.content,Constant.contenttype).auth().digest(Constant.digestUsername,Constant.digestPassword)
+=======
+	  	    	.baseUri(Constant.baseurl).auth().digest(Constant.digestUsername,Constant.digestPassword)
+>>>>>>> fe406259de5fda889c71e4d7d861a455846eb399:ApiTestingTraining/src/test/java/api/com/WireMock/PatchRequestWireMock.java
 	  	        .accept(ContentType.JSON)
 	  	        .body(passingdata.toString())
 	  	        .when()
