@@ -67,11 +67,14 @@ public class Constant {
 	   //Basic auth
 	    public final static String basicUsername= "rajasekhar123";
 	    public final static String basicPassword="raj@12345";
-	  //akamaiedge grida
+	  //akamaiedge grid
 	    public final static String akamaiAccessToken="akamai_myaccesstoken";
 	    public final static	String ClientToken="akamai_myclienttoken";
 	    public final static String ClientSecret="akamai_myclientsecret";
-	     
+	      //digest auth
+	    public final static String digestUsername="rajasekhar123";
+	    public final static String digestPassword="password123";
+	   
 	   
 }
 
