@@ -1,0 +1,18 @@
+{
+  "id": 30,
+  "category": {
+    "id": 30110,
+    "name": "pug"
+  },
+  "name": "snoopy",
+  "photoUrls": [
+    "https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fbaby-dog&psig=AOvVaw1PLyIfrJF9TqrzoAxe5dPn&ust=1685513923905000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKC4peeynP8CFQAAAAAdAAAAABAE"
+  ],
+  "tags": [
+    {
+      "id": 300407,
+      "name": "friendly and joy"
+    }
+  ],
+  "status": "available"
+}
