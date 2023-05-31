@@ -1,0 +1,25 @@
+{
+  "request": {
+    "url": "/api/employees/partialmodify",
+    "method": "PATCH",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "employee_salary":50000
+        }
+      }
+    ],
+    "headers": {
+      "Content-Type": {
+        "equalTo":"application/json"
+      }
+  }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "patchdata.json"
+  }
+}

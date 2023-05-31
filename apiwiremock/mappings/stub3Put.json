@@ -1,0 +1,26 @@
+{
+  "request": {
+    "url": "/api/employees/modify",
+    "method": "PUT",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "employee_name": "sekhar",
+           "employee_salary": 36278, 
+           "employee_age": 33
+          }
+      }
+    ],"headers": {
+      "Content-Type": {
+        "equalTo":"application/json"
+      }
+  }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "putdata.json"
+}
+}
