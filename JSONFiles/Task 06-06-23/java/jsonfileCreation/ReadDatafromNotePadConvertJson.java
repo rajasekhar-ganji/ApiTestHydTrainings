@@ -18,11 +18,11 @@ public class ReadDatafromNotePadConvertJson {
 	 	BufferedReader br = new BufferedReader(new FileReader(inputFile));
     	 StringBuilder contentBuilder = new StringBuilder();
          String line=null;
+	 contentBuilder.append("{");  	
          while ((line = br.readLine()) != null) {
-             System.out.println(line);
-             contentBuilder.append(line).append("\n");  
+             contentBuilder.append(line);  
          }
-        
+         contentBuilder.append("}");  
           File outputFile = new File(ConstantPathsAndvalues.addpet);
           BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile));
           bw.write(contentBuilder.toString());
