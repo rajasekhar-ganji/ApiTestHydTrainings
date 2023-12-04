@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-01T19:51:38 IST" name="Default suite" finished-at="2023-12-01T19:52:49 IST" duration-ms="71004">
+    <groups>
+    </groups>
+    <test started-at="2023-12-01T19:51:38 IST" name="Default test" finished-at="2023-12-01T19:52:49 IST" duration-ms="71004">
+      <class name="com.everyset.testcases.MyProfile">
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.everyset.testcases.MyProfile@316bcf94]" started-at="2023-12-01T19:51:38 IST" name="BeforeMethod" finished-at="2023-12-01T19:51:56 IST" duration-ms="17393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="Contact(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.everyset.testcases.MyProfile@316bcf94]" started-at="2023-12-01T19:51:56 IST" name="Contact" data-provider="csvDataProvider" finished-at="2023-12-01T19:52:13 IST" duration-ms="17441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hyd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[miyapur]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hyderabad]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[WI]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[90909]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Same]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Sec]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Sec]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Hyderabad]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[12222]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Contact -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.everyset.testcases.MyProfile@316bcf94]" started-at="2023-12-01T19:52:13 IST" name="BeforeMethod" finished-at="2023-12-01T19:52:29 IST" duration-ms="15629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="Contact(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.everyset.testcases.MyProfile@316bcf94]" started-at="2023-12-01T19:52:29 IST" name="Contact" data-provider="csvDataProvider" finished-at="2023-12-01T19:52:49 IST" duration-ms="20447" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234567777]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hyder]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[miy]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hyd]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[WI]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[90909]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Same]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Sec]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Sec]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Hyderabad]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[12222]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Contact -->
+      </class> <!-- com.everyset.testcases.MyProfile -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,27 @@
+2023-12-01 13:01:38,806  INFO [main] BaseClass:311 - Everyset app statred
+2023-12-01 13:01:39,261  INFO [main] BaseClass:314 - User name entered successfully
+2023-12-01 13:01:39,448  INFO [main] BaseClass:317 - Password entered successfully
+2023-12-01 13:01:39,688  INFO [main] BaseClass:319 - Clicked on login button
+2023-12-01 13:01:44,003  INFO [main] BaseClass:322 - Message========>  Successfully logged in!
+2023-12-01 13:01:49,035  INFO [main] BaseClass:331 - Login Successfully
+2023-12-01 13:01:49,036  INFO [main] BaseClass:337 - Everyset landing page Displayed
+2023-12-01 13:01:49,153  INFO [main] BaseClass:339 - My Profile main page Displayed
+2023-12-01 13:01:51,899  INFO [main] BaseClass:456 - Contact page Displayed
+2023-12-01 13:01:53,176  INFO [main] BaseClass:458 - Contact Edit page displayed successfully when clicked on edit icon
+2023-12-01 13:01:53,712  INFO [main] BaseClass:460 - Phone number entered in text box succesfully
+2023-12-01 13:01:54,155  INFO [main] BaseClass:462 - Residential address entered in text box succesfully
+2023-12-01 13:01:54,644  INFO [main] BaseClass:464 - Address 2 entered in text box succesfully
+2023-12-01 13:01:55,152  INFO [main] BaseClass:466 - City entered in text box succesfully
+2023-12-01 13:01:55,510  INFO [main] BaseClass:468 - State entered in text box
+2023-12-01 13:01:55,541  INFO [main] BaseClass:470 - Selected state in dropdown succesfully
+2023-12-01 13:01:56,051  INFO [main] BaseClass:472 - Zip code entered in text box succesfully
+2023-12-01 13:01:56,577 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2023-12-01 13:01:56,582 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2023-12-01 13:01:56,587 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2023-12-01 13:01:56,591 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2023-12-01 13:01:56,591 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/rajasekhar.ganji/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2023-12-01 13:01:56,883 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2023-12-01 13:01:56,883 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2023-12-01 13:01:56,884 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2023-12-01 13:01:56,884 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2023-12-01 13:01:56,885 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/rajasekhar.ganji/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
