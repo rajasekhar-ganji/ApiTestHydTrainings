@@ -3,12 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.everyset.testcases.MyProfile">
+      <class name="com.everyset.testcases.Jobs">
         <methods>
-          <include name="BeforeMethod"/>
-          <include name="Contact"/>
+          <include name="Login"/>
+          <include name="AfterMethod"/>
+          <include name="Available"/>
+          <include name="AfterTest"/>
+          <include name="BeforeTest"/>
+          <include name="AvailChecks"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.everyset.testcases.MyProfile -->
+      </class> <!-- com.everyset.testcases.Jobs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

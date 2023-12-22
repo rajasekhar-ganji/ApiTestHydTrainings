@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.everyset.utilities.FailedTestcase_Screenshot_Utils"/>
+    <listener class-name="com.everyset.utilities.ExtentReport_Utils"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)(failed)">
+    <classes>
+      <class name="com.everyset.testcases.MyProfile">
+        <methods>
+          <include name="AfterSuite"/>
+          <include name="MyProfile_MainPage"/>
+          <include name="BeforeMethod"/>
+          <include name="ProfilePictureChange" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.everyset.testcases.MyProfile -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

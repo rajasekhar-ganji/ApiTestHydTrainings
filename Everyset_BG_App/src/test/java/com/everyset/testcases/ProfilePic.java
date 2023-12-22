@@ -2,7 +2,9 @@ package com.everyset.testcases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
@@ -30,15 +32,31 @@ public class ProfilePic {
 //		  pom.Login();
 //		  pom.ProfileIcon();
 	
+//
+//    @DataProvider(name = "csvDataProvider")
+//    public Object[][] provideCsvData() throws Exception {
+//    	
+//    	 String[][] sheetData = ReadingFiles_Utils.getDataFromSheet( "Job3");
+//		return sheetData;
+//        WebDriverManager.chromedriver().setup();
+//    driver = new ChromeDriver();
+//    log.info("browser opened successfully");
+//	driver.manage().window().maximize();
+//	driver.get(ReadingFiles_Utils.ConnectPropertyFile("url"));
+//	JobsPOM	 pom=new JobsPOM(driver);
+//	  pom.Login();
+//	  log.info("login successfully");
+//	//  pom.invites();
+//WebElement e=driver.findElement(By.xpath("//*[@id='submit-to-job-btn']"));
+////	  String color=e.getCssValue("font-size");
+////	 String hexcolor= Color.fromString(color).asHex();
+////	  System.out.println(color);
+//e.click();
 
-    @DataProvider(name = "csvDataProvider")
-    public Object[][] provideCsvData() throws Exception {
-    	
-    	 String[][] sheetData = ReadingFiles_Utils.getDataFromSheet( "Job3");
-		return sheetData;
-       
+	//Thread.sleep(10000);
+
         
     }
 
    
-}
+

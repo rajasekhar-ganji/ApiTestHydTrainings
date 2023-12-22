@@ -34,27 +34,33 @@
     <artifactId>log4j</artifactId>
     <version>1.2.17</version>
 </dependency>
- <dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.15.0</version>
+    <version>4.16.1</version>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
-    <version>5.5.2</version>
+    <version>5.5.3</version>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 <dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
-    <version>5.0.9</version>
+    <version>5.1.1</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
 <dependency>
     <groupId>com.relevantcodes</groupId>
     <artifactId>extentreports</artifactId>
     <version>2.41.2</version>
 </dependency>
+
 
 <dependency>
     <groupId>org.apache.poi</groupId>

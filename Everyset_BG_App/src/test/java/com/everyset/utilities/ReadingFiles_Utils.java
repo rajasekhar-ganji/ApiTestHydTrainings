@@ -22,7 +22,7 @@ public class ReadingFiles_Utils {
 	//Read properties file
 	public static Properties prop;
 	public static FileReader file;
-	public static  String ConnectPropertyFile(String name) {
+	public static String ConnectPropertyFile(String name) {
 		prop = new Properties();
 		FileInputStream input = null;
 		try {
@@ -63,44 +63,7 @@ public class ReadingFiles_Utils {
 			}
 		
 
- //CSV file Reader Utility 
-	public static String[][] CsvReader() throws Exception{
-		File csvFile = new File(Constant_Paths.csvfilepath);
-	        FileReader fileReader = new FileReader(csvFile);
-	        CSVReader csvReader = new CSVReader(fileReader);
 
-	        // Skip the first line (header)
-	        csvReader.readNext();
-
-	        // Count the number of rows in the CSV file (excluding the header)
-	        int rows = 0;
-	        while (csvReader.readNext() != null) {
-	            rows++;
-	        }
-
-	        // Reset the CSV reader to the beginning of the file
-	        csvReader.close();
-	        fileReader.close();
-	        fileReader = new FileReader(csvFile);
-	        csvReader = new CSVReader(fileReader);
-
-	        // Creating a 2D array to store CSV data
-	        String[][] data = new String[rows][];
-	        
-	        // Skip the first line (header)
-	        csvReader.readNext();
-
-	        // Read data directly into the 2D array
-	        for (int i = 0; i < rows; i++) {
-	            data[i] = csvReader.readNext();
-	        }
-
-	        // Close the readers
-	        csvReader.close();
-	        fileReader.close();
-
-	        return data;
-	    }
 	
 	// Csv File Reader utility for specific Sheetname
 	 public static Object[][] getDataFromCsvFile() throws IOException, Exception {

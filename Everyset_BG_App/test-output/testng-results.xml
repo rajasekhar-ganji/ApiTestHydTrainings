@@ -1,153 +1,492 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results retried="6" ignored="0" total="9" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-01T19:51:38 IST" name="Default suite" finished-at="2023-12-01T19:52:49 IST" duration-ms="71004">
+  <suite started-at="2023-12-22T10:43:31 IST" name="Suite" finished-at="2023-12-22T10:45:21 IST" duration-ms="110422">
     <groups>
     </groups>
-    <test started-at="2023-12-01T19:51:38 IST" name="Default test" finished-at="2023-12-01T19:52:49 IST" duration-ms="71004">
-      <class name="com.everyset.testcases.MyProfile">
-        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.everyset.testcases.MyProfile@316bcf94]" started-at="2023-12-01T19:51:38 IST" name="BeforeMethod" finished-at="2023-12-01T19:51:56 IST" duration-ms="17393" status="PASS">
+    <test started-at="2023-12-22T10:43:31 IST" name="Test" finished-at="2023-12-22T10:45:21 IST" duration-ms="110422">
+      <class name="com.everyset.testcases.Jobs">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:43:31 IST" name="setUp" finished-at="2023-12-22T10:43:34 IST" duration-ms="3193" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="Contact(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.everyset.testcases.MyProfile@316bcf94]" started-at="2023-12-01T19:51:56 IST" name="Contact" data-provider="csvDataProvider" finished-at="2023-12-01T19:52:13 IST" duration-ms="17441" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1234567890]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[hyd]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[miyapur]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Hyderabad]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[WI]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[90909]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Same]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Sec]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Sec]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Hyderabad]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[MD]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[12222]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:43:31 IST" name="setUp" finished-at="2023-12-22T10:43:34 IST" duration-ms="3193" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Contact -->
-        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.everyset.testcases.MyProfile@316bcf94]" started-at="2023-12-01T19:52:13 IST" name="BeforeMethod" finished-at="2023-12-01T19:52:29 IST" duration-ms="15629" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:43:31 IST" name="setUp" finished-at="2023-12-22T10:43:34 IST" duration-ms="3193" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="Contact(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.everyset.testcases.MyProfile@316bcf94]" started-at="2023-12-01T19:52:29 IST" name="Contact" data-provider="csvDataProvider" finished-at="2023-12-01T19:52:49 IST" duration-ms="20447" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1234567777]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[hyder]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[miy]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Hyd]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[WI]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[90909]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Same]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Sec]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Sec]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Hyderabad]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[MD]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[12222]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:43:34 IST" name="OpenBrowser" finished-at="2023-12-22T10:43:42 IST" duration-ms="8173" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Contact -->
-      </class> <!-- com.everyset.testcases.MyProfile -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:43:34 IST" name="OpenBrowser" finished-at="2023-12-22T10:43:43 IST" duration-ms="9326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:43:34 IST" name="OpenBrowser" finished-at="2023-12-22T10:43:42 IST" duration-ms="8170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method retried="true" signature="Available()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:43:42 IST" name="Available" finished-at="2023-12-22T10:44:05 IST" duration-ms="23056" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElements {using=xpath, value=//*[text()='Available']//parent::td//parent::tr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\RAJASE~1.GAN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57193}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57193/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElements {using=xpath, value=//*[text()='Available']//parent::td//parent::tr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\RAJASE~1.GAN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57193}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57193/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:373)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+at jdk.proxy2/jdk.proxy2.$Proxy15.size(Unknown Source)
+at com.everyset.pageObjects.JobsPOM.available(JobsPOM.java:267)
+at com.everyset.testcases.Jobs.Available(Jobs.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Available -->
+        <test-method retried="true" signature="AvailChecks()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:43:42 IST" name="AvailChecks" finished-at="2023-12-22T10:43:44 IST" duration-ms="1264" status="SKIP">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f750271c4dc2c925e246dd3159451408, actions {actions=[org.openqa.selenium.interactions.Sequence@43dbcbcc]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\RAJASE~1.GAN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57194}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57194/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f750271c4dc2c925e246dd3159451408]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f750271c4dc2c925e246dd3159451408, actions {actions=[org.openqa.selenium.interactions.Sequence@43dbcbcc]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\RAJASE~1.GAN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57194}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57194/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f750271c4dc2c925e246dd3159451408
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:609)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
+at com.everyset.utilities.HelperClass.MouseHoverAndClick(HelperClass.java:238)
+at com.everyset.pageObjects.JobsPOM.availchecksTab(JobsPOM.java:286)
+at com.everyset.testcases.Jobs.AvailChecks(Jobs.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AvailChecks -->
+        <test-method retried="true" signature="Booked()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:43:43 IST" name="Booked" finished-at="2023-12-22T10:44:02 IST" duration-ms="18287" status="SKIP">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 20 out of bounds for length 5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 20 out of bounds for length 5
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+at java.base/java.util.Objects.checkIndex(Objects.java:359)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.get(Unknown Source)
+at com.everyset.pageObjects.JobsPOM.BookedTab(JobsPOM.java:354)
+at com.everyset.testcases.Jobs.Booked(Jobs.java:70)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Booked -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:43:44 IST" name="tearDown" finished-at="2023-12-22T10:43:44 IST" duration-ms="461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:43:44 IST" name="setUp" finished-at="2023-12-22T10:43:45 IST" duration-ms="1457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:43:45 IST" name="OpenBrowser" finished-at="2023-12-22T10:43:53 IST" duration-ms="7492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method retried="true" signature="AvailChecks()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:43:53 IST" name="AvailChecks" finished-at="2023-12-22T10:44:13 IST" duration-ms="19541" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.everyset.pageObjects.JobsPOM.availchecksTab(JobsPOM.java:290)
+at com.everyset.testcases.Jobs.AvailChecks(Jobs.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AvailChecks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:02 IST" name="tearDown" finished-at="2023-12-22T10:44:03 IST" duration-ms="1131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:03 IST" name="setUp" finished-at="2023-12-22T10:44:04 IST" duration-ms="1480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:04 IST" name="OpenBrowser" finished-at="2023-12-22T10:44:13 IST" duration-ms="8935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:05 IST" name="tearDown" finished-at="2023-12-22T10:44:06 IST" duration-ms="502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:06 IST" name="setUp" finished-at="2023-12-22T10:44:08 IST" duration-ms="1798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:08 IST" name="OpenBrowser" finished-at="2023-12-22T10:44:15 IST" duration-ms="7593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:13 IST" name="tearDown" finished-at="2023-12-22T10:44:13 IST" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:13 IST" name="setUp" finished-at="2023-12-22T10:44:14 IST" duration-ms="1333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="Booked()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:13 IST" name="Booked" finished-at="2023-12-22T10:44:32 IST" duration-ms="18386" status="SKIP">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 20 out of bounds for length 5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 20 out of bounds for length 5
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+at java.base/java.util.Objects.checkIndex(Objects.java:359)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.get(Unknown Source)
+at com.everyset.pageObjects.JobsPOM.BookedTab(JobsPOM.java:354)
+at com.everyset.testcases.Jobs.Booked(Jobs.java:70)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Booked -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:14 IST" name="OpenBrowser" finished-at="2023-12-22T10:44:22 IST" duration-ms="7616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method retried="true" signature="Available()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:15 IST" name="Available" finished-at="2023-12-22T10:44:48 IST" duration-ms="33109" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.everyset.pageObjects.JobsPOM.available(JobsPOM.java:268)
+at com.everyset.testcases.Jobs.Available(Jobs.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Available -->
+        <test-method signature="AvailChecks()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:22 IST" name="AvailChecks" finished-at="2023-12-22T10:44:41 IST" duration-ms="19195" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.everyset.pageObjects.JobsPOM.availchecksTab(JobsPOM.java:290)
+at com.everyset.testcases.Jobs.AvailChecks(Jobs.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AvailChecks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:32 IST" name="tearDown" finished-at="2023-12-22T10:44:32 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:32 IST" name="setUp" finished-at="2023-12-22T10:44:34 IST" duration-ms="1626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:34 IST" name="OpenBrowser" finished-at="2023-12-22T10:44:41 IST" duration-ms="7483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="Booked()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:41 IST" name="Booked" finished-at="2023-12-22T10:44:59 IST" duration-ms="18320" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 20 out of bounds for length 5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 20 out of bounds for length 5
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+at java.base/java.util.Objects.checkIndex(Objects.java:359)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.get(Unknown Source)
+at com.everyset.pageObjects.JobsPOM.BookedTab(JobsPOM.java:354)
+at com.everyset.testcases.Jobs.Booked(Jobs.java:70)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Booked -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:41 IST" name="tearDown" finished-at="2023-12-22T10:44:42 IST" duration-ms="388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:48 IST" name="tearDown" finished-at="2023-12-22T10:44:49 IST" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:49 IST" name="setUp" finished-at="2023-12-22T10:44:50 IST" duration-ms="1430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:50 IST" name="OpenBrowser" finished-at="2023-12-22T10:44:58 IST" duration-ms="7585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="Available()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:44:58 IST" name="Available" finished-at="2023-12-22T10:45:21 IST" duration-ms="23086" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.everyset.pageObjects.JobsPOM.available(JobsPOM.java:268)
+at com.everyset.testcases.Jobs.Available(Jobs.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Available -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:45:00 IST" name="tearDown" finished-at="2023-12-22T10:45:00 IST" duration-ms="432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.everyset.testcases.Jobs@10cf09e8]" started-at="2023-12-22T10:45:21 IST" name="tearDown" finished-at="2023-12-22T10:45:21 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.everyset.testcases.Jobs -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
